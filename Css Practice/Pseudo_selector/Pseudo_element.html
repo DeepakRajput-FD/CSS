@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_element</title>
+    <style>
+       .para::before
+       {
+        content: "~sum dolor sit amet, consectetur adipisicing elit. Sint archit";
+        background-color: red;
+        /* it means you can add some letter using content property in (before) it display starting letter */
+       }
+       .para::after
+       {
+        content: "Deepak";
+        background-color: blue;
+        /* in after property used to you can add letter using content property but it display on last ending letter. */
+       }
+       .para::selection
+       {
+        background-color: blueviolet;
+        /* it display color if you select the letter */
+       }
+       .para::first-letter
+       {
+        color: cornsilk;
+        /* it is display color only first letter  */
+       }
+       .para::first-line
+       {
+        color: cyan;
+        /* it display color only first line. */
+       }
+    </style>
+</head>
+<body>
+    <p>pseudo_element selector is followed with double collon(::)</p>
+    <br>
+    <p>there have some property like before,after,selection,first-line,first-letter.</p>
+    <br>
+    <br>
+    <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint architecto esse dolore expedita sequi ipsa voluptate, culpa nesciunt, vero doloribus, voluptatem ad eum. Voluptatum cupiditate nobis eligendi cum laudantium atque.
+    </p>
+</body>
+</html>
