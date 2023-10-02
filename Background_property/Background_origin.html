@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_origin</title>
+    <style>
+        .Background_origin
+        {
+            background: url(../Images/Background_origin.avif);
+            padding: 300px;
+            background-repeat: no-repeat;
+            border: 5px dotted black;
+            color: red;
+            /* background-origin: border-box; */
+            /* background-origin:content-box ; */
+            background-origin:padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="Background_origin">
+        Background_origin
+    </div>
+    <br>
+    <br>
+    <p>
+        it have some property like padding-box and content-box and border-box.
+        padding-box means it is started with padding point.
+        content-box means it is started with content point.
+        border-box means it is started with boredr point.
+    </p>
+</body>
+</html>
