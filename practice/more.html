@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+       
+        div[class*="child"]
+        {
+            width: 200px;
+            height: 100px;
+            margin: 30px;
+            background-origin: border-box;
+            background-clip: border-box;
+            background-size: cover;
+            color: darkmagenta;
+            display: inline-block;
+        }
+        .child1
+        {
+            background-image:url(../Images/background-attachment.jpg) ;
+        }
+        .child2
+        {
+            background-image:url(../Images/Background_clip.jpg) ;
+        }
+        .child3
+        {
+            background-image:url(../Images/background_position.jpg) ;
+        }
+        .child4
+        {
+            background-image:url(../Images/Background_origin.avif) ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="child1">
+            one
+        </div>
+        <div class="child2">
+            two
+        </div>
+        <div class="child3">
+            three
+        </div>
+        <div class="child4">
+            four
+        </div>
+    </div>
+</body>
+</html>
