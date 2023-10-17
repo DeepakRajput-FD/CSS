@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinWidth</title>
+    <style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }   
+
+    h1::after
+    {
+        content: "Hello I am Originally from css";
+    }
+    
+    body
+    {
+        background-color: aqua;
+    }
+
+     @media (min-width:576px) /*  for mobile device */
+    {
+     
+        h1::after
+        {
+            content: I am from 576px;
+        }
+        
+        body
+        {
+            background-color: blue;
+        }
+
+    }
+
+     @media (min-width:768)  /*table device only */
+    {
+
+        h1::after
+        {
+            content: "I am From 768px";
+        }
+
+        body
+        {
+            background-color: blanchedalmond;
+        }
+
+    }
+
+     @media  (min-width:992px)   /*Large Device (Desktop) */
+    {
+        h1::after
+        {
+            content: ", I am from 992px";
+        }
+        
+        body
+        {
+            background-color: blueviolet;
+        }
+    
+    }
+
+     @media (min-width:1400px) /*for Large Desktop Only */
+    {
+        h1::after
+        {
+            content: "I AM from 1400px";
+        }
+
+        body
+        {
+            background-color: brown;
+        }
+    }
+
+    @media (min-width:1500px)
+    {
+
+        h1::after
+        {
+            content: "I am from 1500px";
+        }
+
+        body
+        {
+            background-color: cyan;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Hello I am orignal
+    </h1>
+</body>
+</html>
