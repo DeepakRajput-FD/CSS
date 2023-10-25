@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div[class*="box"]
+        {
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            background-color: greenyellow;
+        }
+        .fixed
+        {
+            height: 100px;
+            position: fixed;
+            /* height: 20px; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* right: 0; */
+            z-index: 1;
+            background-color: blanchedalmond;
+        }
+        .sticky
+        {
+            height: 200px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width:100%;
+            z-index: 2;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="fixed">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-4">
+            <div class="sticky">deepak
+    
+            </div>
+             </div>
+        <div class="box-3">Box-3</div>
+        <div class="box-5">Box-5</div>
+    </div>
+</body>
+</html>

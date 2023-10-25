@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv
+        {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            display: inline-block;
+            /* flex-wrap: wrap; */
+            /* flex-direction: row-reverse; */
+            /* gap: 10px,20px;  */
+        }
+        div[class*="Item"]
+        {
+            flex-wrap: wrap-reverse;
+            color: black;
+            border: 1px solid black;
+            /* flex-grow: 5; */
+            background-color: red;
+            /* gap: 10px 20px; */
+         }
+         .Item2
+         {
+            background-color: green;
+            order: 1;
+            flex-wrap: nowrap;
+         }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+       <div class="Item1">Item1</div>
+       <div class="Item2">Item2</div>
+       <div class="Item3">Item3</div>
+    </div>
+</body>
+</html>

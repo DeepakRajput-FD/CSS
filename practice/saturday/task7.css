@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.parent
+{
+    background: url(./images/food-background.png) no-repeat center center/cover;
+}
+.nav-wrapper
+{
+    background-color: aquamarine;
+}
+.container 
+{
+    width: 100%;
+    margin: 0 auto;
+}
+nav
+{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul
+{
+    display: flex;
+    list-style-type: none;
+}
+a{
+    padding: 60px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+.search
+{
+    font-size: 25px;
+    color: white;
+}
