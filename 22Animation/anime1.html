@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation i css</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1
+        {
+            width: 300px;
+            height: 300px;
+            /* border: 2px solid black; */
+            /* background-color: blue; */
+           animation-name: wonder;
+           animation-duration: 10s;
+           animation-delay: 2s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+          
+        }
+        @keyframes wonder {
+            from{
+                margin-top:0px ;
+                margin-left: 30px;
+            }
+            to{
+                margin-left: 1150px;
+                margin-top: 700px;
+            }
+         }
+         
+        img
+        {
+            width: 300px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <img src="..//Images/Surfboard.jpg" alt="">
+    </div>
+</body>
+</html>

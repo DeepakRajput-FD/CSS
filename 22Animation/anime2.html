@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime2</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .box
+        {
+            width: 300px;
+            height: 300px;
+            /* background: url(..//Images/Background_origin.avif) no-repeat center center/cover; */
+             border-radius: 50%;
+            animation-name: lack;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .box2
+        {
+            width: 300px;
+            height: 300px;
+            /* background: url(..//Images/natural1.jpg) no-repeat center center/cover; */
+             border-radius: 50%;
+            animation-name: wonder;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+       
+        @keyframes lack {
+            0%
+            {
+                margin-left: 0px;
+                margin-left: 0px;
+            }
+            25%
+            {
+                margin-top: 0px;
+                margin-left: 600px;
+            }
+            50%
+            {
+                margin-top: 600px;
+                margin-left: 600px;
+            }
+            75%
+            {
+                margin-left: 0px;
+                margin-top: 600px;
+            }
+            100%
+            {
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+            
+        }
+
+        @keyframes wonder {
+            0%
+            {
+                margin-top: 0px;
+                margin-left: 600px;
+            }
+            25%
+            {
+                margin-top: 0px;
+                margin-left: 1200px;
+            }
+            50%
+            {
+                margin-top: 600px;
+                margin-left: 1200px;
+            }
+            75%
+            {
+                margin-left: 600px;
+                margin-top: 600px;
+            }
+            100%
+            {
+                margin-top: 0px;
+                margin-left: 600px;
+            }
+            
+        }
+
+        .container
+        {
+            display: flex;
+            border: 10px solid black;
+            background-color: aqua;
+            /* justify-content: center; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <img src="..//Images/Sunset.jpg" alt="">
+    </div>
+    <div class="box2">
+        <img src="..//Images/Surfboard.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
