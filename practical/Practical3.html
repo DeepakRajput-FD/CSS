@@ -12,11 +12,26 @@
             padding: 0;
             box-sizing: border-box;
         }
+        #main
+        {
+            position: relative;
+        }
         nav
         {
             display: flex;
             justify-content: space-between;
             background-color: teal;
+            display: none;
+        }
+        input
+        {
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+        }
+        input:checked ~ nav
+        {
+            display: flex;
         }
         .menu
         {
@@ -34,6 +49,13 @@
             color: white;
             font-size: 40px;
             padding: 20px;
+        }
+        #bar
+        {
+            font-size: 30px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
         }
         .images
         {
@@ -107,6 +129,8 @@
 </head>
 <body>
     <header id="main">
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <input type="checkbox" name="" id="">
         <nav>
             <div class="image">
                 <i class="fa-solid fa-image"></i>
