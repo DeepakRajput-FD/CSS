@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .child
+        {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            /* transition-duration: 2s;
+            transition-property: transform ;
+            transition-timing-function: ease-in-out; */
+        }
+        .child img
+        {
+            width: 100%;
+            height: 100%;
+            transition-duration: 2s;
+            transition-property: transform ;
+            transition-timing-function: ease-in-out;
+        }
+         img:hover
+        {
+            transform:scale(1.2);
+            border-bottom: 5px solid red;
+            /* border-radius: 50%; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <img src="..//Images/doraemon.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
