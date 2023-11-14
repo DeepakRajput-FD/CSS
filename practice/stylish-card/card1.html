@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #header1
+        {
+            width: 100%;
+            height: 700px;
+            background-color: #192734;
+        }
+
+        .card-wrapper
+        {
+            padding: 100px;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        .card
+        {
+            margin: 0 auto;
+            display: flex;
+            width: 500px;
+            height: 100%;
+            transition: 2s ease-in-out  ;
+        }
+        
+        .card:hover
+        {
+            box-shadow: 10px 10px 10px orange;
+            transform: scale(1.2);
+        }
+
+        .images
+        {
+            width: 50%;
+        }
+        .images img
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text
+        {
+            display: block;
+            padding-top: 20px;
+            /* padding: 50px 0px; */
+            padding-left: 20px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        p , audio
+        {
+            padding-top: 20px;
+            text-transform: capitalize;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header1">
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="images">
+                <img src=".//hanumanji.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>
+                    jay shree ram
+                </h2>
+                <p>
+                    Rajput Deepak
+                </p>
+                <audio src="./audio/Keejo Kesari Ke Laal Jai Shree Ram Dj Karan Kahar Dj Dakshraj [TubeRipper (mp3cut.net) (1).m4a" controls autoplay></audio>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>
