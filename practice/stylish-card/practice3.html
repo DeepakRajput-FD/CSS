@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent
+        {
+            width: 100%;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .images
+        {
+            overflow: hidden;
+        }
+
+        div[class*="card"]
+        {
+            width: 30%;
+        }
+
+        .card
+        {
+            background-color: green;
+        }
+
+        .card2
+        {
+            background-color: #aa4203 ;
+        }
+
+        .card3
+        {
+            background-color: rgb(61, 61, 235);
+        }
+
+        div[class*="card"] img
+        {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s ease 0s all;
+        }
+
+        .images img:hover
+        {
+            transform: translateY(100px);
+            filter: drop-shadow(10px 10px red);
+        }
+
+        .text
+        {
+            visibility: hidden;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .card:hover .images + .text
+        {
+            visibility: visible;
+            color: teal;
+        }
+
+        .parent:hover div[class*="card"]:hover
+        {
+            background-color: white;
+            transition: 3s ease 0.5s all;
+            box-shadow: 10px 10px teal;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="card">
+            <div class="images">
+            <img src="./images/hulk-removebg-preview.png" alt="">
+            </div>
+            <div class="text">
+                <p>be positive</p>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="images">
+                <img src="./images/iron-removebg-preview.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Nothing is a break for me. Not even the breaks are breaks. .</p>
+                </div>
+                </div>
+
+        <div class="card3">
+            <div class="images">
+            <img src="./images/thor-removebg-preview.png" alt="">
+            </div>
+            <div class="text">
+                <p>Be unbreakable</p>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
