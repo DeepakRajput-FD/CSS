@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown</title>
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar
+    {
+      background-color: thistle;
+      border: 1px solid black;
+      width: 80%;
+      margin: 0 auto;
+    }
+    nav
+    {
+      background-color: thistle;
+      padding: 10px;
+      font-family: sans-serif;
+      text-transform: capitalize;
+    }
+    .menus
+    {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      position: relative;
+      color: red;
+    }
+
+    .menu1,.menu2,.menu3,.menu4,.menu5
+  {
+    position: absolute;
+    display: none;
+    width: 200px;
+    /* height: 150px; */
+    list-style-type: none;
+    padding: 10px 0px;
+  }
+
+  .menus li
+  {
+    padding: 5px 0px;
+  }
+
+  .menu11:hover .one+.menu1
+  {
+    display: block;
+    color: gold;
+    background-color: black;
+  }
+
+
+  .menu22:hover .two+.menu2
+  {
+    display: block;
+    color: gold;
+    background-color: black;
+  }
+
+
+  .menu33:hover .three+.menu3
+  {
+
+    display: block;
+    color: gold;
+    background-color: black;
+  }
+
+
+  .menu44:hover .four+.menu4
+  {
+
+    display: block;
+    color: gold;
+    background-color: black;
+  }
+
+
+  .menu55:hover .five+.menu5
+  {
+    display: block;
+    color: gold;
+    background-color: black;
+  }
+
+  .relate
+  {
+    position: relative;
+  }
+
+  .second
+  {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+  }
+
+  .parent2:hover > .second
+  {
+    display: block;
+    background-color: aqua;
+    color: darkgreen;
+  }  
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <nav>
+      <ul class="menus">
+
+        <div class="menu11">
+        <li class="one">home</li>
+        
+        <ul class="menu1">
+          <li>text1</li>
+
+
+          <div class="parent2">
+          <li class="relate">text1</li>
+
+          <ul class="second">
+            <li><img src="./images/violet.svg" alt=""></li>
+            <li>everything is around 2</li>
+            <li>everything is around 2</li>
+            <li>everything is around 2</li>
+            <li>everything is around 2</li>
+          </ul>
+          </div>
+
+          <li>text1</li>
+          <li>text1</li>
+          <li>text1</li>
+        </ul>
+        </div>
+
+
+        <div class="menu22">
+        <li class="two">promo</li>
+
+        <ul class="menu2">
+          <li>text2</li>
+          <li>text2</li>
+          <li>text2</li>
+          <li>text2</li>
+          <li>text2</li>
+        </ul>
+        </div>
+
+
+        <div class="menu33">
+        <li class="three">product</li>
+        
+        <ul class="menu3">
+          <li>text3</li>
+          <li>text3</li>
+          <li>text3</li>
+          <li>text3</li>
+          <li>text3</li>
+        </ul>
+        </div>
+
+
+        <div class="menu44">
+        <li class="four">about</li>
+
+        <ul class="menu4">
+          <li>text4</li>
+          <li>text4</li>
+          <li>text4</li>
+          <li>text4</li>
+          <li>text4</li>
+        </ul>
+        </div>
+
+
+        <div class="menu55">
+        <li class="five">contact</li>
+
+        <ul class="menu5">
+          <li>text5</li>
+          <li>text5</li>
+          <li>text5</li>
+          <li>text5</li>
+          <li>text5</li>
+        </ul>
+        </div>
+
+
+      </ul>
+    </nav>
+  </div>
+
+  <div class="images">
+    <img src="./images/iron-removebg-preview.png" alt="">
+  </div>
+
+</body>
+</html>
