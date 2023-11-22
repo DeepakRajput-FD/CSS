@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dr.reddy nav</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav
+        {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .information
+        {
+            display: flex;
+            column-gap:20px ;
+        }
+        li
+        {
+            list-style-type: none;
+        }
+        .menu1
+        {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .icon1
+        {
+            display: flex;
+            position: relative;
+            gap: 20px;
+        }
+
+        .country-option
+        {
+            display: none;
+            position: absolute;
+            padding: 50px;
+            left: -400px;
+            background-color: thistle;
+        }
+
+        .country-option li
+        {
+            padding: 10px;
+            display: flex;
+        }
+
+        .img1
+        {
+            position: relative;
+        }
+
+        .parent2:hover .img1
+        {
+            border-bottom: 3px solid red;
+        }
+
+        .parent2:hover .img1 + .country-option
+        {
+            padding: 10px;
+            display: flex;
+            color: black;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav>
+            <!-- dr.reddy image  -->
+            <div class="images">
+                <img src="./images/violet.svg" alt="">
+            </div>
+
+            <div class="information">
+                <!-- connect -->
+
+            <!-- menus -->
+            <div class="menu">
+                <ul class="menu1">
+                <li>INVESTORS</li>
+                <li>MEDIA</li>
+                <li>PARTNERS</li>
+                <li>CAREERS</li>
+                <li>CONTACT US</li>
+                </ul>
+            </div>
+
+            <!-- icons -->
+            <div class="icons">
+                <ul class="icon1">
+                    <li>|</li>
+
+                    <div class="parent2">
+                    
+                    <li class="img1"><img src="./images/globe-icon.svg" alt="" id="image"></li>
+                    
+                    <div class="country-option">
+
+                        <div class="text">
+                        <h2>
+                            Country sites
+                        </h2>
+                        </div>
+
+                    <ul class="page1menu">
+                        <li>AUSTRALIA</li>
+                        <li>CANADA</li>
+                        <li>COLOMBIA</li>
+                        <li>FINLAND</li>
+                        <li>INDIA</li>
+                        <li>NEW ZEALAND</li>
+                        <li>RUSSIA</li>
+                        <li>SLOVAKIA</li>
+                        <li>UNITED KINGDOM</li>
+                    </ul>
+
+                    <ul class="page1menu">
+                        <li>AUSTRALIA</li>
+                        <li>CANADA</li>
+                        <li>COLOMBIA</li>
+                        <li>FINLAND</li>
+                        <li>INDIA</li>
+                        <li>NEW ZEALAND</li>
+                        <li>RUSSIA</li>
+                        <li>SLOVAKIA</li>
+                        <li>UNITED KINGDOM</li>
+                    </ul>
+
+                    <ul class="page1menu">
+                        <li>AUSTRALIA</li>
+                        <li>CANADA</li>
+                        <li>COLOMBIA</li>
+                        <li>FINLAND</li>
+                        <li>INDIA</li>
+                        <li>NEW ZEALAND</li>
+                        <li>RUSSIA</li>
+                        <li>SLOVAKIA</li>
+                        <li>UNITED KINGDOM</li>
+                    </ul>
+
+                    </div>
+
+                    </div>
+
+                    <li><img src="./images/search-feather.svg" alt=""></li>
+                </ul>
+            </div>
+            </div>
+
+
+        </nav>
+    </div>
+</body>
+</html>
