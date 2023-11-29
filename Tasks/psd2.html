@@ -5,15 +5,337 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSD2</title>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-wrapper
+    {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 20px 0px;
+        align-items: center;
+        font-family: sans-serif;
+        text-transform: capitalize;
+    }
+
+    .image img
+    {
+        width: 70px;
+    }
+
+    .menus
+    {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .menus a
+    {
+        text-decoration: none;
+        color: #bfcee1;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .menus li
+    {
+        padding: 0px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #bfcee1;
+    }
+
+    #home
+    {
+        color: white;
+        background-color: #096aed;
+        border-radius: 20px;
+    }
+
+    .menus a:hover
+    {
+        color: white;
+        background-color: #096aed;
+    }
+
+    .parent
+    {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    .col-50
+    {
+        width: 50%;
+        padding: 0px 50px;
+    }
+
+    .row-50
+    {
+        margin-left: 50px;
+    }
+
+    .content h2
+    {
+        padding-top: 20px;
+        font-size: 50px;
+    }
+    
+   .content h2 span
+   {
+    color: #096aed;
+   }
+
+   h3
+   {
+    
+    font-size: 21px;
+    color: #bfcee1;
+    padding: 20px 0px;
+   }
+
+   .button1
+   {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #096aed;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+   }
+
+   .button2
+   {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #bfcee1;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 20px;
+   }
+
+   .black-card
+   {
+    padding: 30px 40px;
+    background-image: linear-gradient(29deg, #19191d 0%, #19191d 19%, #454b53 100%);
+    color: white;
+    margin: 0px 50px;
+    border-radius: 20px;
+   }
+
+   .card-account
+   {
+    display: flex;
+    align-items: center;
+   }
+
+   #ac-number
+   {
+    padding: 10px 0px;
+   }
+
+   #ac-number span
+   {
+    padding:0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+   }
+
+   #card-number
+   {
+    font-size: 18px;
+    padding-left: 10px;
+   }
+
+   .chip-img
+   {
+    width: 110px;
+   }
+
+   .chip-img img
+   {
+    width: 100%;
+   }
+
+   .expire-date
+   {
+    text-transform: uppercase;
+    padding-top: 10px;
+   }
+
+   .expire-date p
+   {
+    padding: 5px 0px;
+    font-size: 20px;
+    font-weight: 600;
+   }
+
+   #expiration
+   {
+    font-size: 14px;
+    font-weight: 400;
+   }
+
+   .blue-card
+   {
+    padding: 30px 40px;
+    background-image: linear-gradient(29deg, #055fdb 0%, #055fdb 19%, #5896ea 100%);
+    color: white;
+    margin: 0px 50px;
+    border-radius: 20px;
+    position: absolute;
+    top: 190px;
+    right: 130px;
+    z-index: 2;
+    background-color: #8aa2c2;
+    box-shadow:0px  20px 30px #8aa2c2;
+   }
+
+   .card-logo img
+   {
+    width: 50px;
+   }
+
+   .card-logo
+   {
+    padding-left: 30px;
+    /* padding-right: 10px; */
+   }
+
+   .buttons
+   {
+    padding-top: 50px;
+   }
+
+</style>
 <body>
+    <header>
     <nav>
+    
         <div class="nav-wrapper">
             
             <div class="image">
                 <img src="./images/LOGO.png" alt="">
             </div>
+            
+            <ul class="menus">
+                <li><a href="" id="home">home</a></li>
+                <li><a href="">play with card </a></li>
+                <li><a href="">cards</a></li>
+                <li><a href="">Aboutus</a></li>
+                <li><a href="">contactus</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            </ul>
 
         </div>
     </nav>
+
+    <div class="parent">
+
+    <div class="col-50">
+
+        <div class="images">
+            <img src="./images/SAFE ICON.png" alt="">
+        </div>
+
+        <div class="content">
+            
+            <h2>
+                Go further with <span>Card</span>
+            </h2>
+
+            <h3>
+                We are a global payments technology company
+                working to enable consumers, businesses and 
+                banks to use digital currency.
+            </h3>
+        </div>
+
+        <div class="buttons">
+
+            <button class="button1">GET A CARD</button>
+            
+            <button class="button2">READ MORE</button>
+        </div>
+
+    </div>
+
+    <div class="row-50">
+        
+        <div class="black-card">
+
+            <div class="card-account">
+
+                <div class="card-num">
+                    <p id="card-number">CARD NUMBER</p>
+                    <p
+                    id="ac-number"><span>2671</span>   <span>2671</span>  <span>8300</span> <span>  2023</span></p>
+                </div>
+
+                <div class="card-logo">
+                    <img src="./images/LOGO 2.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="chip-img">
+                <img src="./images/CHIP.png" alt="">
+            </div>
+
+            <div class="expire-date">
+                <p id="expiration">expiration date</p>
+                <p>03/22</p>
+                <p>vince carter</p>
+            </div>
+        
+        </div>
+
+        <div class="blue-card">
+
+            <div class="card-account">
+
+                <div class="card-num">
+                    <p id="card-number">CARD NUMBER</p>
+                    <p id="ac-number"><span>2671</span>   <span>2671</span>  <span>8300</span> <span>  2023</span></p>
+                </div>
+
+                <div class="card-logo">
+                    <img src="./images/LOGO 2.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="chip-img">
+                <img src="./images/CHIP.png" alt="">
+            </div>
+
+            <div class="expire-date">
+                <p id="expiration">expiration date</p>
+                <p>03/22</p>
+                <p>vince carter</p>
+            </div>
+        
+        </div>
+    </div>
+    
+    </div>
+
+    </header>
 </body>
 </html>
